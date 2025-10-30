@@ -48,10 +48,23 @@ i. Clone the repository
 git clone [INSERT YOUR GITHUB REPO URL HERE]  
 cd Flower-Classification-Project
 ```
+ii. Install All Dependencies
 
-ii. Install All DependenciesBashpip install -r requirements.txt
-iii. Add Your DataEnsure the flower images are placed inside the data/flower_dataset/ folder, with one subfolder for each of the five classes.iv. Train the ModelBashpython run_train_flowers.py
-v. Simulate Prediction (Requires run_predict.py to be in the root)Bashpython .\run_predict.py test_rose.jpg
+pip install -r requirements.txt
+
+
+iii. Add Your Data Ensure the flower images are placed inside the data/flower_dataset/ folder, with one subfolder for each of the five classes.
+
+iv. Train the Model
+
+Bash
+
+python run_train_flowers.py
+v. Simulate Prediction (Requires run_predict.py to be in the root)
+
+Bash
+
+python .\run_predict.py test_rose.jpg
 
 
 
