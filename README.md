@@ -47,6 +47,7 @@ i. Clone the repository
 ```bash
 git clone [INSERT YOUR GITHUB REPO URL HERE]  
 cd Flower-Classification-Project
+```
 
 ii. Install All DependenciesBashpip install -r requirements.txt
 iii. Add Your DataEnsure the flower images are placed inside the data/flower_dataset/ folder, with one subfolder for each of the five classes.iv. Train the ModelBashpython run_train_flowers.py
@@ -55,7 +56,7 @@ v. Simulate Prediction (Requires run_predict.py to be in the root)Bashpython .\r
 
 
 
-## 📊 Section 6: Results (Removing LaTeX and Bold)**
+## 📊 Section 6: Results 
 
 This uses plain text and standard Markdown for the table.
 
