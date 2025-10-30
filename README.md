@@ -41,13 +41,31 @@ The goal is to develop an image classification model that accurately distinguish
 
 ### Prerequisites
 * Python 3.7+
-* Dependencies: `tensorflow numpy scikit-learn Pillow` (listed in `requirements.txt`)
+* Dependencies: Listed in `requirements.txt`.
 
 i. Clone the repository
 ```bash
 git clone [INSERT YOUR GITHUB REPO URL HERE]  
 cd Flower-Classification-Project
+
 ii. Install All DependenciesBashpip install -r requirements.txt
 iii. Add Your DataEnsure the flower images are placed inside the data/flower_dataset/ folder, with one subfolder for each of the five classes.iv. Train the ModelBashpython run_train_flowers.py
 v. Simulate Prediction (Requires run_predict.py to be in the root)Bashpython .\run_predict.py test_rose.jpg
-6. Evaluation Metrics and ResultsThe model was trained for 20 epochs. The final performance was measured on the $20\%$ validation split of the dataset.MetricResultValidation Loss$\mathbf{1.1821}$Validation Accuracy$\mathbf{0.5385 \ (53.85\%)}$7. Insights and ChallengesThe achieved accuracy of $\mathbf{53.85\%}$ is significantly higher than the $20\%$ random guess baseline, confirming the CNN successfully learned discriminative features. The primary challenges addressed were:Overfitting: Successfully mitigated by aggressive use of Dropout layers ($0.25$ and $0.5$) and dynamic Data Augmentation (rotation, shifting) to enhance the model's ability to generalize.Multiclass Confusion: Visual similarity between certain species (e.g., Daisy and Dandelion) led to a higher loss. This was addressed by increasing the capacity of the final $\text{Dense}$ layer to 128 neurons, allowing for better feature discrimination.
+
+
+
+
+## 6. Evaluation Metrics and Results
+
+The model was trained for 20 epochs. The final performance was measured on the 20% validation split of the dataset.
+
+| Metric | Result |
+| :--- | :--- |
+| **Validation Loss** | $\mathbf{1.1821}$ |
+| **Validation Accuracy** | $\mathbf{0.5385 \ (53.85\%)}$ |
+
+## 7. Insights and Challenges
+
+The achieved accuracy of $\mathbf{53.85\%}$ is significantly higher than the $20\%$ random guess baseline, confirming the CNN successfully learned discriminative features. The primary challenges addressed were:
+* **Overfitting:** Mitigated by aggressive use of **Dropout layers** and dynamic **Data Augmentation** to enhance the model's ability to generalize.
+* **Multiclass Confusion:** The high loss ($\mathbf{1.1821}$) suggested confusion between visually similar species, addressed by increasing the capacity of the final $\text{Dense}$ layer to 128 neurons.
