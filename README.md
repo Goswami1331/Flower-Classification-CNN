@@ -41,7 +41,7 @@ The goal is to develop an image classification model that accurately distinguish
 
 ### Prerequisites
 * Python 3.7+
-* Dependencies: Listed in `requirements.txt`.
+* Dependencies: Listed in requirements.txt.
 
 i. Clone the repository
 ```bash
@@ -55,17 +55,23 @@ v. Simulate Prediction (Requires run_predict.py to be in the root)Bashpython .\r
 
 
 
+## 📊 Section 6: Results (Removing LaTeX and Bold)**
+
+This uses plain text and standard Markdown for the table.
+
+```markdown
 ## 6. Evaluation Metrics and Results
 
 The model was trained for 20 epochs. The final performance was measured on the 20% validation split of the dataset.
 
 | Metric | Result |
 | :--- | :--- |
-| **Validation Loss** | $\mathbf{1.1821}$ |
-| **Validation Accuracy** | $\mathbf{0.5385 \ (53.85\%)}$ |
+| **Validation Loss** | **1.1821** |
+| **Validation Accuracy** | **0.5385 (53.85%)** |
+
 
 ## 7. Insights and Challenges
 
-The achieved accuracy of $\mathbf{53.85\%}$ is significantly higher than the $20\%$ random guess baseline, confirming the CNN successfully learned discriminative features. The primary challenges addressed were:
+The achieved accuracy of **53.85%** is significantly higher than the 20% random guess baseline, confirming the CNN successfully learned discriminative features. The primary challenges addressed were:
 * **Overfitting:** Mitigated by aggressive use of **Dropout layers** and dynamic **Data Augmentation** to enhance the model's ability to generalize.
-* **Multiclass Confusion:** The high loss ($\mathbf{1.1821}$) suggested confusion between visually similar species, addressed by increasing the capacity of the final $\text{Dense}$ layer to 128 neurons.
+* **Multiclass Confusion:** The high loss (**1.1821**) suggested confusion between visually similar species, addressed by increasing the capacity of the final Dense layer to 128 neurons.
