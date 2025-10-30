@@ -58,17 +58,17 @@ v. Simulate Prediction (Requires run_predict.py to be in the root)Bashpython .\r
 
 ## 📊 Section 6: Results 
 
-This uses plain text and standard Markdown for the table.
 
-```markdown
 ## 6. Evaluation Metrics and Results
 
 The model was trained for 20 epochs. The final performance was measured on the 20% validation split of the dataset.
 
 | Metric | Result |
 | :--- | :--- |
+| :--- | :--- |
 | **Validation Loss** | **1.1821** |
 | **Validation Accuracy** | **0.5385 (53.85%)** |
+
 
 
 ## 7. Insights and Challenges
@@ -76,3 +76,5 @@ The model was trained for 20 epochs. The final performance was measured on the 2
 The achieved accuracy of **53.85%** is significantly higher than the 20% random guess baseline, confirming the CNN successfully learned discriminative features. The primary challenges addressed were:
 * **Overfitting:** Mitigated by aggressive use of **Dropout layers** and dynamic **Data Augmentation** to enhance the model's ability to generalize.
 * **Multiclass Confusion:** The high loss (**1.1821**) suggested confusion between visually similar species, addressed by increasing the capacity of the final Dense layer to 128 neurons.
+
+
